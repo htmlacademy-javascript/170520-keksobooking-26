@@ -1,8 +1,7 @@
-"use strict";
-
 /*
   Нужно по заданию, но ниже эта функция поглощается более общей randomPositivePrecisedNumberInRange()
 */
+
 function randomPositiveIntegerNumberInRange(min, max) {
   if ( !min || !max || typeof min !== 'number' || typeof max !== 'number' || min < 0 || max < 0 || !Number.isInteger(min) || !Number.isInteger(max) || min >= max) {
     return null;
@@ -77,8 +76,12 @@ function randomPositivePrecisedNumberInRange(min, max, precision) {
 
 
 /* Пример использования */
-/*
+
 for ( let i=0; i<30; i++ ) {
-  console.log(randomPositivePrecisedNumberInRange(1.46,1.47, 4));
+  randomPositiveIntegerNumberInRange(1, 3);
 }
- */
+
+for ( let i=0; i<30; i++ ) {
+  randomPositivePrecisedNumberInRange(1.46,1.47, 4);
+}
+
