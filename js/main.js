@@ -29,7 +29,7 @@ function getRandomPositiveFloat(min, max, precision = 0) {
 }
 
 
-/* Пример использования */
+/* Пример данных -- массив bookings */
 
 const placeType = ['palace', 'flat', 'house', 'bungalow', 'hotel'];
 const guestsTiming = ['12:00', '13:00', '14:00'];
@@ -76,8 +76,3 @@ for ( let i=0; i<10; i++ ) {
     },
   });
 }
-
-
-console.log(bookings);
-
-// console.log(getRandomPositiveFloat(1.46, 1.47, 4));
